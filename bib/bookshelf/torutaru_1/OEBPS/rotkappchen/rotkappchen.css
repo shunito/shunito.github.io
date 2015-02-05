@@ -1,0 +1,36 @@
+h1,h2 {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 0.5em;
+}
+
+h3,h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0.5em;
+}
+
+article {
+	padding: 0.5em;
+}
+div, p {
+	line-height: 1.4;
+}
+
+p {
+	text-indent: 1em;
+}
+
+p.first {
+	margin-top: 1em;
+}
+
+ul {
+	margin: 1em 0 1em 2em;
+	list-style-type: disc;
+}
+
+li {
+	color: #884444;
+	list-style: disc;
+}

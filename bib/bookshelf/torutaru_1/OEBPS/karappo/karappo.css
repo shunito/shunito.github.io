@@ -1,0 +1,67 @@
+div, p {
+	line-height: 1.6;
+}
+
+p {
+	text-indent: 1em;
+}
+
+p.noindent {
+	text-indent: 0;
+}
+
+p.last {
+	text-align: right;
+	margin: 1em;
+}
+
+div.content {
+	padding-top: 2em;
+	margin: 0.5em;
+}
+
+div.last-cut {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+div.last-cut img {
+	width: 100%;
+}
+
+div.credit {
+	margin: 1em;
+	color: #444444;
+	font-size: 0.8em;
+	page-break-inside:avoid;
+}
+
+div.credit h1 {
+	font-size: 1.2em;
+}
+
+div.credit p.ruby {
+	text-indent: 4em;
+	font-size: 0.8em;
+}
+
+div.publisher {
+	margin: 1em;
+	color: #444444;
+	font-size: 0.7em;
+	page-break-inside:avoid;
+}
+
+div.credit-logo {
+	width: 4em;
+	float: left;
+}
+
+div.credit-logo img {
+	width: 100%;
+}
+
+

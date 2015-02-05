@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','ƒƒCƒŠƒI',Meiryo,'‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	background:;
+	color:#333;
+}
+
+#wrap{
+	width:100%;
+	background:url(../img/head.png) repeat-x top;
+	border-bottom:solid 5px #ad7943;
+	padding-top:20px;
+}
+
+
+/*-Contents-*/
+
+#contents{
+	padding:3%;
+	line-height:1.4em;
+}
+
+#contents ul{
+	font-size:85%;
+	text-align:center;
+	padding:2% 0;
+	border-top:dashed 2px #ad7943;
+	border-bottom:dashed 2px #ad7943;
+	width:85%;
+	margin:0 auto;
+	color:#666;
+}
+
+#contents img{
+	padding:2px;
+	border:2px solid #cd9860;
+}
+
+#contents div.image-wrapper-left{
+	float:left;
+	margin: 1px 1em 0 0;
+	width: 45%;
+}
+
+#contents div.image-wrapper-right{
+	float:right;
+	margin: 1px 0 0 1em;
+	width: 45%;
+}
+
+#contents div.image-wrapper-left img {
+	width: 98%;
+}
+
+#contents div.image-wrapper-right img {
+	width: 98%;
+}
+
+#contents dl{
+	font-weight:bold;
+	margin:5% 0;
+}
+
+#contents p{
+	margin-bottom:3%;
+}
+
+#contents p.copy{
+	font-size:85%;
+	text-align:right;
+}
+
+#contents span.underline{
+	background:url(../img/ul.png) repeat-x;
+}

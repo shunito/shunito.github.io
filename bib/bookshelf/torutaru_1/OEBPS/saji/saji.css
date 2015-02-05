@@ -1,0 +1,46 @@
+body {
+	font-family:'ƒqƒ‰ƒMƒmŠÛƒS Pro W3','Hiragino Maru Gothic Pro','ƒƒCƒŠƒI',Meiryo,'‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	background: #ffffff;
+	color: #666666;
+	margin: 10px;
+	padding: 0px;
+	text-align:center; 
+}
+
+p {
+	padding:1em;
+}
+
+img {
+	width: 100%;
+}
+
+div.img_wrap {
+	width: 95%;
+	margin:auto auto 1.5em;
+}
+
+div.logo_wrap {
+	width: 5%;
+}
+
+p.footer {
+	padding-top: 1em;
+}
+
+p.profile {
+	font-size:0.8em;
+	padding-bottom: 0.5em;
+	text-align:left;
+}
+
+p.profile_link {
+	padding-bottom: 0.5em;
+}
+
+a,a:link,a:visited{
+	text-decoration: none;
+	color: #999999;
+}
+
+

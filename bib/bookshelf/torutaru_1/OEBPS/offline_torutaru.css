@@ -1,0 +1,32 @@
+.contents {
+	background-color: #d7f2b4;
+	color: #424141;
+	margin: 1em 0.5em 1em 0.5em;
+	padding: 0.5em;
+	border-radius: 1em;
+}
+
+.contents h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.contents p {
+	text-indent: 1em;
+	line-height: 1.6em;
+}
+
+.contents p.first {
+	margin-top: 1em;
+}
+
+.contents p.link {
+	margin-top: 1em;
+	text-align: center;
+}
+
+.contents p.link a {
+	color: #444488;
+	font-weight: bold;
+	text-decoration: none;
+}

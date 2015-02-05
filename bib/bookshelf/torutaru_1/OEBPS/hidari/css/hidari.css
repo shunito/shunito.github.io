@@ -1,0 +1,113 @@
+img {
+	width: 100%;
+}
+
+div {
+	line-height: 1.5;
+}
+
+span, p {
+	line-height: 1.5;
+}
+
+p {
+	text-indent: 1em;
+}
+
+article, section {
+	clear: both;
+}
+
+article {
+	padding: 3%;
+}
+
+p.start {
+	margin-top: 1.5em;
+}
+p.noindent {
+	text-indent: 0em;
+}
+
+div.titlewrap {
+	width: 30%;
+	float: left;
+	padding-right:1.5em;
+}
+
+div.imgwrap {
+	width: 40%;
+	float: right;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+span.noindent {
+	margin-left: 0;
+}
+
+div.pre {
+	clear: both;
+	margin: 1em;
+	padding: 0.5em;
+	font-size: 0.9em;
+	background: #e2e2e2;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	display: none;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+p.author {
+	text-indent: 0;
+	font-size: 1em;
+	color: #004488;
+	text-align: right;
+}
+
+div.title_box {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	page-break-inside: avoid;
+}
+
+div.title_box p.name {
+	text-indent: 0;
+	font-weight: bold;
+}
+
+div.title_box p.pos {
+	text-indent: 0;
+	display: block;
+	font-size: 0.8em;
+}
+
+div.title_box p.desc {
+	margin:0.5em 1em;
+	color: #707070;
+	font-size: 0.8em;
+}
+
+div.title_box ul.desc_list {
+	display: block;
+	margin-top:1em;
+
+}
+div.title_box ul.desc_list li {
+	list-style:none;
+	color: #707070;
+	font-size: 0.8em;
+}
+

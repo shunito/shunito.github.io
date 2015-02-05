@@ -1,0 +1,65 @@
+div,p,span {
+	line-height: 1.4em;
+}
+
+div.contents {
+	margin: 0.5em;
+}
+
+div.logo-wrap {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.logo-wrap img {
+	width: 100%;
+}
+
+div.img-wrap {
+	width: 20%;
+	float: right;
+	margin: 0.4em;
+}
+
+div.img-wrap img {
+	width: 100%;
+}
+
+article {
+	padding: 3%;	
+}
+
+p {
+	text-indent: 1em;
+}
+
+p.noindent {
+	text-indent: 0em;
+}
+
+p.first {
+	margin-top: 1em;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+ol {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+ol li {
+	text-indent: 2em;
+}
+
+address{
+	margin-top: 0.5em;
+    text-align:right;
+}

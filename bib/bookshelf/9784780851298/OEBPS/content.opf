@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="jpecode" version="3.0" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="jpecode">78085129000000000000</dc:identifier>
+<dc:title id="title0">じょうずなピラニアのつかまえ方</dc:title>
+<meta refines="#title0" property="display-seq">1</meta>
+<dc:creator id="creator0" >wakufactory</dc:creator>
+<meta refines="#creator0" property="role" scheme="marc:relators" id="role">edt</meta>
+<meta refines="#creator0" property="display-seq">1</meta>
+<dc:rights>クリエイティブ・コモンズ 表示 - 継承 3.0 非移植</dc:rights>
+ <dc:publisher id="publisher">ポット出版</dc:publisher>
+<dc:format>application/epub+zip</dc:format>
+<dc:language>ja</dc:language>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="dcterms:modified">2014-03-17T09:00:00Z</meta>
+<meta name="cover" content="_cover_image"/>
+</metadata>
+<manifest>
+<item media-type="text/css" href="template.css" id="_template.css" />
+<item media-type="text/css" href="style.css" id="_style.css" />
+<item media-type="application/xhtml+xml" href="p_cover.xhtml" id="_cover.xhtml" />
+<item media-type="image/jpeg" href="cover.jpg" id="_cover_image"/>
+<item media-type="application/xhtml+xml" href="preface.xhtml" id="_preface.xhtml" />
+<item media-type="application/xhtml+xml" href="nav.xhtml" id="_nav.xhtml" properties="nav" />
+<item media-type="application/xhtml+xml" href="bodymatter_3_0.xhtml" id="_bodymatter_3_0.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_3_1.xhtml" id="_bodymatter_3_1.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_3_2.xhtml" id="_bodymatter_3_2.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_0.xhtml" id="_bodymatter_1_0.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_1.xhtml" id="_bodymatter_1_1.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_2.xhtml" id="_bodymatter_1_2.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_3.xhtml" id="_bodymatter_1_3.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_4.xhtml" id="_bodymatter_1_4.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_1_5.xhtml" id="_bodymatter_1_5.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_2_0.xhtml" id="_bodymatter_2_0.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_0.xhtml" id="_bodymatter_0_0.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_1.xhtml" id="_bodymatter_0_1.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_2.xhtml" id="_bodymatter_0_2.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_3.xhtml" id="_bodymatter_0_3.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_4.xhtml" id="_bodymatter_0_4.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_5.xhtml" id="_bodymatter_0_5.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_6.xhtml" id="_bodymatter_0_6.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_7.xhtml" id="_bodymatter_0_7.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_8.xhtml" id="_bodymatter_0_8.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_9.xhtml" id="_bodymatter_0_9.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_10.xhtml" id="_bodymatter_0_10.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_11.xhtml" id="_bodymatter_0_11.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_12.xhtml" id="_bodymatter_0_12.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_13.xhtml" id="_bodymatter_0_13.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_14.xhtml" id="_bodymatter_0_14.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_15.xhtml" id="_bodymatter_0_15.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_16.xhtml" id="_bodymatter_0_16.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_17.xhtml" id="_bodymatter_0_17.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_18.xhtml" id="_bodymatter_0_18.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_19.xhtml" id="_bodymatter_0_19.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_20.xhtml" id="_bodymatter_0_20.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_21.xhtml" id="_bodymatter_0_21.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_22.xhtml" id="_bodymatter_0_22.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_23.xhtml" id="_bodymatter_0_23.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_0_24.xhtml" id="_bodymatter_0_24.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_4_1.xhtml" id="_bodymatter_4_1.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_5_1.xhtml" id="_bodymatter_5_1.xhtml" />
+<item media-type="application/xhtml+xml" href="bodymatter_5_2.xhtml" id="_bodymatter_5_2.xhtml" />
+<item media-type="application/xhtml+xml" href="okuduke.xhtml" id="_okuduke.xhtml" />
+</manifest>
+<spine page-progression-direction="rtl" >
+<itemref idref="_cover.xhtml" linear="no" />
+<itemref idref="_preface.xhtml" />
+<itemref idref="_nav.xhtml" />
+<itemref idref="_bodymatter_3_1.xhtml" />
+<itemref idref="_bodymatter_1_0.xhtml" />
+<itemref idref="_bodymatter_1_1.xhtml" />
+<itemref idref="_bodymatter_1_2.xhtml" />
+<itemref idref="_bodymatter_1_3.xhtml" />
+<itemref idref="_bodymatter_1_4.xhtml" />
+<itemref idref="_bodymatter_1_5.xhtml" />
+<itemref idref="_bodymatter_2_0.xhtml" />
+<itemref idref="_bodymatter_0_0.xhtml" />
+<itemref idref="_bodymatter_0_1.xhtml" />
+<itemref idref="_bodymatter_0_3.xhtml" />
+<itemref idref="_bodymatter_0_4.xhtml" />
+<itemref idref="_bodymatter_0_5.xhtml" />
+<itemref idref="_bodymatter_0_6.xhtml" />
+<itemref idref="_bodymatter_0_7.xhtml" />
+<itemref idref="_bodymatter_0_8.xhtml" />
+<itemref idref="_bodymatter_0_9.xhtml" />
+<itemref idref="_bodymatter_0_10.xhtml" />
+<itemref idref="_bodymatter_0_11.xhtml" />
+<itemref idref="_bodymatter_0_12.xhtml" />
+<itemref idref="_bodymatter_0_13.xhtml" />
+<itemref idref="_bodymatter_0_14.xhtml" />
+<itemref idref="_bodymatter_0_15.xhtml" />
+<itemref idref="_bodymatter_0_16.xhtml" />
+<itemref idref="_bodymatter_0_17.xhtml" />
+<itemref idref="_bodymatter_0_18.xhtml" />
+<itemref idref="_bodymatter_0_19.xhtml" />
+<itemref idref="_bodymatter_0_20.xhtml" />
+<itemref idref="_bodymatter_0_21.xhtml" />
+<itemref idref="_bodymatter_0_22.xhtml" />
+<itemref idref="_bodymatter_0_23.xhtml" />
+<itemref idref="_bodymatter_0_24.xhtml" />
+<itemref idref="_bodymatter_5_1.xhtml" />
+<itemref idref="_bodymatter_5_2.xhtml" />
+<itemref idref="_bodymatter_4_1.xhtml" />
+<itemref idref="_okuduke.xhtml" />
+</spine>
+</package>

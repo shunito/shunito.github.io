@@ -1,0 +1,50 @@
+div, p {
+	line-height: 1.5;
+}
+
+.contents {
+	padding: 3%;
+}
+
+.contents h1 {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	margin: 1em 0 0.5em 0;
+}
+
+.contents h2 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1em 0 0.5em 0;
+}
+
+p {
+	text-indent: 1em;
+}
+
+p.first {
+	margin-top: 0.5em;
+}
+
+.contents ul {
+	margin: 0.5em 0 0.5em 2em;
+	list-style-type: disc;
+}
+
+.contents li {
+	list-style: disc;
+}
+
+.contents ul.android {
+	font-weight: bold;
+}
+
+.contents ul.android li {
+	list-style: none;
+}
+
+.contents h2.other {
+	color: #444444;
+}
+

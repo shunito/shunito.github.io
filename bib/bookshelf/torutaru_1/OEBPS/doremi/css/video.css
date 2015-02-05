@@ -1,0 +1,38 @@
+div.center-wrap {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	page-break-inside: avoid;
+}
+
+div.body {
+	background-image: url('../back.jpg');
+	padding: 1em 0 5em 0;
+}
+
+div.title-logo {
+	page-break-inside: avoid;
+	margin-bottom: 0.5em;
+}
+h1,h2,h3 {
+	text-align: center;
+}
+h3 {
+	font-size: 0.8em;
+	color: #664444;
+}
+
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+img {
+	width: 100%;
+}
+
+video {
+	width: 100%;
+}
+

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="url">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:language>ja</dc:language>
+    <dc:title id="title1">電子雑誌 トルタル 1号 </dc:title>
+    <meta property="title-type" refines="#title1">main</meta>
+    <meta property="display-seq" refines="#title1">1</meta>
+    <dc:title id="title2">電子雑誌 トルタル </dc:title>
+    <meta property="title-type" refines="#title2">collection</meta>
+    <meta property="group-position" refines="#title2">1</meta>
+    <meta property="display-seq" refines="#title2">2</meta>
+    <dc:title id="title3">電子雑誌 トルタル 1号 </dc:title>
+    <meta property="title-type" refines="#title3">expanded</meta>
+    <dc:creator id="creator1">トルタル編集部</dc:creator>
+    <meta property="role" refines="#creator1">aut</meta>
+    <dc:creator id="creator2">田中モトヒロ</dc:creator>
+    <meta property="role" refines="#creator2">aut</meta>
+    <dc:creator id="creator3">パン好き委員会巴里支部</dc:creator>
+    <meta property="role" refines="#creator3">aut</meta>
+    <dc:creator id="creator4">油井亮太郎</dc:creator>
+    <meta property="role" refines="#creator4">aut</meta>
+    <dc:creator id="creator5">古田靖</dc:creator>
+    <meta property="role" refines="#creator5">aut</meta>
+    <dc:creator id="creator6">NORO</dc:creator>
+    <meta property="role" refines="#creator6">aut</meta>
+    <dc:creator id="creator7">珠里友</dc:creator>
+    <meta property="role" refines="#creator7">aut</meta>
+    <dc:creator id="creator8">寺居和美</dc:creator>
+    <meta property="role" refines="#creator8">aut</meta>
+    <dc:creator id="creator9">古田アダム有</dc:creator>
+    <meta property="role" refines="#creator9">aut</meta>
+    <dc:creator id="creator10">山本晴美</dc:creator>
+    <meta property="role" refines="#creator10">aut</meta>
+    <dc:creator id="creator11">藤丸心太</dc:creator>
+    <meta property="role" refines="#creator11">aut</meta>
+    <dc:creator id="creator12">貴美月カムイ</dc:creator>
+    <meta property="role" refines="#creator12">aut</meta>
+    <dc:creator id="creator13">fron</dc:creator>
+    <meta property="role" refines="#creator13">aut</meta>
+    <dc:creator id="creator14">MEYSHI</dc:creator>
+    <meta property="role" refines="#creator14">aut</meta>
+    <dc:creator id="creator15">トルタル編集部</dc:creator>
+    <meta property="role" refines="#creator15">aut</meta>
+    <dc:contributor>トルタル編集部</dc:contributor>
+    <dc:contributor>松野美穂</dc:contributor>
+    <dc:contributor>亀山鶴子</dc:contributor>
+    <dc:contributor>藤本晃司</dc:contributor>
+    <dc:contributor>野知潤一</dc:contributor>
+    <dc:contributor>村木薫</dc:contributor>
+    <dc:contributor>小嶋智</dc:contributor>
+    <dc:contributor>石川亮介</dc:contributor>
+    <dc:contributor>佐々木宏人</dc:contributor>
+    <dc:contributor>P</dc:contributor>
+    <dc:contributor>伊藤俊輔</dc:contributor>
+    <dc:contributor>今井孝治</dc:contributor>
+    <dc:contributor>浦中千里</dc:contributor>
+    <dc:contributor>大森史緒里</dc:contributor>
+    <dc:contributor>諏訪景子</dc:contributor>
+    <dc:contributor>巾崎貴弘</dc:contributor>
+    <dc:contributor>葉山宏孝</dc:contributor>
+    <dc:contributor>渡瀬基樹</dc:contributor>
+    <dc:contributor>トルタル編集部</dc:contributor>
+    <dc:publisher>カナカナ書房</dc:publisher>
+    <dc:date>2012-04-01T03:00:00Z</dc:date>
+    <dc:identifier id="url">http://www.kanakanabooks.com/torutaru/01/external_video</dc:identifier>
+    <meta property="identifier-type" refines="#url">nil</meta>
+    <meta property="dcterms:modified">2012-03-29T21:40:18Z</meta>
+    <meta name="cover" content="item_torutaru_001_h1_05s"/>
+  </metadata>
+  <manifest>
+    <item id="item_cover" href="cover.css" media-type="text/css"/>
+    <item id="item_offline_torutaru" href="offline_torutaru.css" media-type="text/css"/>
+    <item id="item_okuduke" href="okuduke.css" media-type="text/css"/>
+    <item id="item_preface" href="preface.css" media-type="text/css"/>
+    <item id="item_reset" href="reset.css" media-type="text/css"/>
+    <item id="item_torutaru_common" href="torutaru_common.css" media-type="text/css"/>
+    <item id="item_torutaru_howto" href="torutaru_howto.css" media-type="text/css"/>
+    <item id="item_torutaru_staff" href="torutaru_staff.css" media-type="text/css"/>
+    <item id="item_by-nc-nd" href="img/by-nc-nd.png" media-type="image/png"/>
+    <item id="item_kanakana" href="img/kanakana.jpg" media-type="image/jpeg"/>
+    <item id="item_meyshi" href="meyshi/meyshi.css" media-type="text/css"/>
+    <item id="item_meyshi_01" href="meyshi/meyshi_01.jpg" media-type="image/jpeg"/>
+    <item id="item_meyshi_02" href="meyshi/meyshi_02.jpg" media-type="image/jpeg"/>
+    <item id="item_meyshi_03" href="meyshi/meyshi_03.jpg" media-type="image/jpeg"/>
+    <item id="item_logo_clr" href="meyshi/logo_clr.png" media-type="image/png"/>
+    <item id="item_torutaru_001_h1_05s" href="torutaru_001_h1_05s.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="item_cover1" href="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_preface1" href="preface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_howto" href="howto.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_meyshi_page01" href="meyshi/meyshi_page01.html" media-type="application/xhtml+xml"/>
+    <item id="item_hidari" href="hidari/css/hidari.css" media-type="text/css"/>
+    <item id="item_hidari_iphone" href="hidari/css/hidari_iphone.css" media-type="text/css"/>
+    <item id="item_reset1" href="hidari/css/reset.css" media-type="text/css"/>
+    <item id="item_hidari1" href="hidari/img/hidari.jpg" media-type="image/jpeg"/>
+    <item id="item_hidarititle" href="hidari/img/hidarititle.jpg" media-type="image/jpeg"/>
+    <item id="item_hidari_page01" href="hidari/hidari_page01.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_hidari_page02" href="hidari/hidari_page02.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_base" href="pain_de_france/css/base.css" media-type="text/css"/>
+    <item id="item_common" href="pain_de_france/css/common.css" media-type="text/css"/>
+    <item id="item_france2" href="pain_de_france/img/france2.jpg" media-type="image/jpeg"/>
+    <item id="item_france4" href="pain_de_france/img/france4.jpg" media-type="image/jpeg"/>
+    <item id="item_france5" href="pain_de_france/img/france5.jpg" media-type="image/jpeg"/>
+    <item id="item_francelogo" href="pain_de_france/img/francelogo.jpg" media-type="image/jpeg"/>
+    <item id="item_head" href="pain_de_france/img/head.png" media-type="image/png"/>
+    <item id="item_ul" href="pain_de_france/img/ul.png" media-type="image/png"/>
+    <item id="item_pain_de_france" href="pain_de_france/pain_de_france.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_seagal24" href="seagal24h/css/seagal24.css" media-type="text/css"/>
+    <item id="item_seagal24_iphone" href="seagal24h/css/seagal24_iphone.css" media-type="text/css"/>
+    <item id="item_seagal_log" href="seagal24h/img/seagal_log.jpg" media-type="image/jpeg"/>
+    <item id="item_seagal_mini" href="seagal24h/img/seagal_mini.jpg" media-type="image/jpeg"/>
+    <item id="item_seagal24h_vol1" href="seagal24h/seagal24h_vol1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_meyshi_page02" href="meyshi/meyshi_page02.html" media-type="application/xhtml+xml"/>
+    <item id="item_meshi_no_tane" href="meshi_no_tane/meshi_no_tane.png" media-type="image/png"/>
+    <item id="item_meshi" href="meshi_no_tane/meshi.css" media-type="text/css"/>
+    <item id="item_meshi_no_tane1" href="meshi_no_tane/meshi_no_tane.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_dot_blue" href="room1058/dot_blue.jpg" media-type="image/jpeg"/>
+    <item id="item_ekonte_small" href="room1058/ekonte_small.jpg" media-type="image/jpeg"/>
+    <item id="item_kawaii_small" href="room1058/kawaii_small.jpg" media-type="image/jpeg"/>
+    <item id="item_oshirase" href="room1058/oshirase.jpg" media-type="image/jpeg"/>
+    <item id="item_stand_small" href="room1058/stand_small.jpg" media-type="image/jpeg"/>
+    <item id="item_video_logo" href="room1058/video_logo.jpg" media-type="image/jpeg"/>
+    <item id="item_title" href="room1058/title.png" media-type="image/png"/>
+    <item id="item_cloud2" href="room1058/cloud2.gif" media-type="image/gif"/>
+    <item id="item_room1058" href="room1058/room1058.css" media-type="text/css"/>
+    <item id="item_NORO" href="http://tekigi.hiho.jp/torutaru/NORO.mp4" media-type="video/mp4"/>
+    <item id="item_title_external" href="room1058/title_external.xhtml" media-type="application/xhtml+xml" properties="remote-resources"/>
+    <item id="item_room1058_april1" href="room1058/room1058_april1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_logo" href="captaion_ore/logo.png" media-type="image/png"/>
+    <item id="item_ore" href="captaion_ore/ore.png" media-type="image/png"/>
+    <item id="item_ore1" href="captaion_ore/ore.css" media-type="text/css"/>
+    <item id="item_ore_iphone" href="captaion_ore/ore_iphone.css" media-type="text/css"/>
+    <item id="item_reset2" href="captaion_ore/reset.css" media-type="text/css"/>
+    <item id="item_captain_ore" href="captaion_ore/captain_ore.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_reset3" href="saji/reset.css" media-type="text/css"/>
+    <item id="item_saji" href="saji/saji.css" media-type="text/css"/>
+    <item id="item_saji01" href="saji/saji01.jpg" media-type="image/jpeg"/>
+    <item id="item_saji02" href="saji/saji02.jpg" media-type="image/jpeg"/>
+    <item id="item_saji03" href="saji/saji03.jpg" media-type="image/jpeg"/>
+    <item id="item_saji_page01" href="saji/saji_page01.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_saji_page02" href="saji/saji_page02.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_rotkappchen" href="rotkappchen/rotkappchen.css" media-type="text/css"/>
+    <item id="item_NHK_PR" href="rotkappchen/img/NHK_PR.png" media-type="image/png"/>
+    <item id="item_rotkappchen_vol1_logo" href="rotkappchen/img/rotkappchen_vol1_logo.png" media-type="image/png"/>
+    <item id="item_rotkappchen_CSS_vol1_no1_0000" href="rotkappchen/rotkappchen_CSS_vol1_no1_0000.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_title1" href="kiritotta/title.png" media-type="image/png"/>
+    <item id="item_R0019075" href="kiritotta/R0019075.JPG" media-type="image/jpeg"/>
+    <item id="item_kiritotta" href="kiritotta/kiritotta.css" media-type="text/css"/>
+    <item id="item_kiritotta1" href="kiritotta/kiritotta.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_haha" href="watashito/haha.jpg" media-type="image/jpeg"/>
+    <item id="item_watashito" href="watashito/watashito.css" media-type="text/css"/>
+    <item id="item_watashito_vol1" href="watashito/watashito_vol1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_icon2" href="townlights/icon2.jpg" media-type="image/jpeg"/>
+    <item id="item_townlights" href="townlights/townlights.css" media-type="text/css"/>
+    <item id="item_title2" href="townlights/title.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_townlights1" href="townlights/townlights.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_karappokoi_cut" href="karappo/img/karappokoi_cut.jpg" media-type="image/jpeg"/>
+    <item id="item_karappokoi_jkt" href="karappo/img/karappokoi_jkt.jpg" media-type="image/jpeg"/>
+    <item id="item_TIAOBOOKS_LOGO_03" href="karappo/img/TIAOBOOKS_LOGO_03.png" media-type="image/png"/>
+    <item id="item_karappo" href="karappo/karappo.css" media-type="text/css"/>
+    <item id="item_krpk_tiao_cover" href="karappo/krpk_tiao_cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_krpk_tiao" href="karappo/krpk_tiao.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_krpk_credit" href="karappo/krpk_credit.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_meyshi_page03" href="meyshi/meyshi_page03.html" media-type="application/xhtml+xml"/>
+    <item id="item_back" href="doremi/back.jpg" media-type="image/jpeg"/>
+    <item id="item_copy" href="doremi/copy.gif" media-type="image/gif"/>
+    <item id="item_logo1" href="doremi/logo.gif" media-type="image/gif"/>
+    <item id="item_doremi_poster" href="doremi/doremi_poster.jpg" media-type="image/jpeg"/>
+    <item id="item_doremifa" href="http://tekigi.hiho.jp/torutaru/doremifa.mp4" media-type="video/mp4"/>
+    <item id="item_reset4" href="doremi/css/reset.css" media-type="text/css"/>
+    <item id="item_video" href="doremi/css/video.css" media-type="text/css"/>
+    <item id="item_video_iphone" href="doremi/css/video_iphone.css" media-type="text/css"/>
+    <item id="item_doremifa_external" href="doremi/doremifa_external.xhtml" media-type="application/xhtml+xml" properties="remote-resources"/>
+    <item id="item_offline_torutaru1" href="offline_torutaru.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_staff" href="staff.xhtml" media-type="application/xhtml+xml"/>
+    <item id="item_okuduke1" href="okuduke.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="nav" href="nav.html" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="item_cover1"/>
+    <itemref idref="item_preface1"/>
+    <itemref idref="item_howto"/>
+    <itemref idref="item_meyshi_page01"/>
+    <itemref idref="item_hidari_page01"/>
+    <itemref idref="item_hidari_page02"/>
+    <itemref idref="item_pain_de_france"/>
+    <itemref idref="item_seagal24h_vol1"/>
+    <itemref idref="item_meyshi_page02"/>
+    <itemref idref="item_meshi_no_tane1"/>
+    <itemref idref="item_title_external"/>
+    <itemref idref="item_room1058_april1"/>
+    <itemref idref="item_captain_ore"/>
+    <itemref idref="item_saji_page01"/>
+    <itemref idref="item_saji_page02"/>
+    <itemref idref="item_rotkappchen_CSS_vol1_no1_0000"/>
+    <itemref idref="item_kiritotta1"/>
+    <itemref idref="item_watashito_vol1"/>
+    <itemref idref="item_title2"/>
+    <itemref idref="item_townlights1"/>
+    <itemref idref="item_krpk_tiao_cover"/>
+    <itemref idref="item_krpk_tiao"/>
+    <itemref idref="item_krpk_credit"/>
+    <itemref idref="item_meyshi_page03"/>
+    <itemref idref="item_doremifa_external"/>
+    <itemref idref="item_offline_torutaru1"/>
+    <itemref idref="item_staff"/>
+    <itemref idref="item_okuduke1"/>
+  </spine>
+</package>

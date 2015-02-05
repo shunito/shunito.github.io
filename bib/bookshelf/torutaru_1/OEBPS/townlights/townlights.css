@@ -1,0 +1,37 @@
+div.cover-wrap {
+	margin: 0 auto 0 auto;
+	width: 80%;
+	padding-top: 4em;
+}
+
+div.cover-wrap img {
+	width: 100%;
+}
+
+div, p {
+	line-height: 1.6;
+}
+
+div.contents {
+	margin: 0.5em;
+}
+
+p {
+	text-indent: 1em;
+}
+
+p.first {
+	margin-top: 1.5em;
+}
+
+p.noindent {
+	text-indent: 0;
+}
+
+div.last {
+	margin-top: 1em;
+	color: #666666;
+	padding: 0.4em;
+	font-size: 0.9em;
+}
+

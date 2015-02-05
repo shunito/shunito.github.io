@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="http://www.kanakanabooks.com/torutaru/01/external_video"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>電子雑誌 トルタル 1号 </text>
+  </docTitle>
+  <navMap>
+    <navPoint id="item_cover1" playOrder="1">
+      <navLabel>
+        <text>表紙</text>
+      </navLabel>
+      <content src="cover.xhtml"/>
+    </navPoint>
+    <navPoint id="item_preface1" playOrder="2">
+      <navLabel>
+        <text>電子雑誌「トルタル」へようこそ!</text>
+      </navLabel>
+      <content src="preface.xhtml"/>
+    </navPoint>
+    <navPoint id="item_howto" playOrder="3">
+      <navLabel>
+        <text>トルタル読み方案内</text>
+      </navLabel>
+      <content src="howto.xhtml"/>
+    </navPoint>
+    <navPoint id="item_hidari_page01" playOrder="4">
+      <navLabel>
+        <text>左後方から駆け上がるヤツら</text>
+      </navLabel>
+      <content src="hidari/hidari_page01.xhtml"/>
+    </navPoint>
+    <navPoint id="item_pain_de_france" playOrder="5">
+      <navLabel>
+        <text>フランスのパン</text>
+      </navLabel>
+      <content src="pain_de_france/pain_de_france.xhtml"/>
+    </navPoint>
+    <navPoint id="item_seagal24h_vol1" playOrder="6">
+      <navLabel>
+        <text>セガール24時</text>
+      </navLabel>
+      <content src="seagal24h/seagal24h_vol1.xhtml"/>
+    </navPoint>
+    <navPoint id="item_meshi_no_tane1" playOrder="7">
+      <navLabel>
+        <text>飯の種</text>
+      </navLabel>
+      <content src="meshi_no_tane/meshi_no_tane.xhtml"/>
+    </navPoint>
+    <navPoint id="item_title_external" playOrder="8">
+      <navLabel>
+        <text>the Room 1058</text>
+      </navLabel>
+      <content src="room1058/title_external.xhtml"/>
+    </navPoint>
+    <navPoint id="item_captain_ore" playOrder="9">
+      <navLabel>
+        <text>キャプテン☆俺</text>
+      </navLabel>
+      <content src="captaion_ore/captain_ore.xhtml"/>
+    </navPoint>
+    <navPoint id="item_saji_page01" playOrder="10">
+      <navLabel>
+        <text>ひと匙の余韻</text>
+      </navLabel>
+      <content src="saji/saji_page01.xhtml"/>
+    </navPoint>
+    <navPoint id="item_rotkappchen_CSS_vol1_no1_0000" playOrder="11">
+      <navLabel>
+        <text>赤ずきんちゃんご用心</text>
+      </navLabel>
+      <content src="rotkappchen/rotkappchen_CSS_vol1_no1_0000.xhtml"/>
+    </navPoint>
+    <navPoint id="item_kiritotta1" playOrder="12">
+      <navLabel>
+        <text>切り撮った光景</text>
+      </navLabel>
+      <content src="kiritotta/kiritotta.xhtml"/>
+    </navPoint>
+    <navPoint id="item_watashito_vol1" playOrder="13">
+      <navLabel>
+        <text>わたしとわたしの母のこと</text>
+      </navLabel>
+      <content src="watashito/watashito_vol1.xhtml"/>
+    </navPoint>
+    <navPoint id="item_title2" playOrder="14">
+      <navLabel>
+        <text>TownLights</text>
+      </navLabel>
+      <content src="townlights/title.xhtml"/>
+    </navPoint>
+    <navPoint id="item_krpk_tiao_cover" playOrder="15">
+      <navLabel>
+        <text>空っぽの恋</text>
+      </navLabel>
+      <content src="karappo/krpk_tiao_cover.xhtml"/>
+    </navPoint>
+    <navPoint id="item_doremifa_external" playOrder="16">
+      <navLabel>
+        <text>ドレミファソラムシ</text>
+      </navLabel>
+      <content src="doremi/doremifa_external.xhtml"/>
+    </navPoint>
+    <navPoint id="item_offline_torutaru1" playOrder="17">
+      <navLabel>
+        <text>オフライン版トルタルのご案内</text>
+      </navLabel>
+      <content src="offline_torutaru.xhtml"/>
+    </navPoint>
+    <navPoint id="item_staff" playOrder="18">
+      <navLabel>
+        <text>STAFF</text>
+      </navLabel>
+      <content src="staff.xhtml"/>
+    </navPoint>
+    <navPoint id="item_okuduke1" playOrder="19">
+      <navLabel>
+        <text>奥付</text>
+      </navLabel>
+      <content src="okuduke.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

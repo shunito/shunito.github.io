@@ -1,0 +1,71 @@
+img {
+	width: 100%;
+    height: auto;
+}
+
+div.img-wrap-01 {
+    width: 95%;
+    margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.img-wrap-02 {
+    width: 75%;
+    height: auto;
+    margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* meyshi_page_03用 */
+
+div.body-03 {
+	font: 13px/170% "arial narrow'", "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", "Osaka‐等幅";
+	background:white;
+	color: #B4B4B4;
+	letter-spacing: 1px;
+	padding: 0px;
+	text-align:center; 
+}
+
+a,a:link,a:visited{
+	text-decoration: none;
+	color: #B4B4B4;
+}
+a:focus,a:hover,a:active{
+	text-decoration:none;
+	color: black;
+}
+
+#footer {
+	text-align:left; 
+	margin:10px 0 0 20px;
+	font: 13px;
+	background:;
+}
+
+div.img-wrap-03 {
+    width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.logo-wrap {
+	width: 10%;
+}
+div.logo-copyright {
+    page-break-inside: avoid;
+}
+
+div.profile {
+	padding-bottom: 0.5em;
+}
+
+div.profile_link {
+	padding-bottom: 0.5em;
+}
+
+div.manifest {
+	padding-bottom: 1em;
+}
+
