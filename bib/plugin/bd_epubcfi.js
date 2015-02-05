@@ -22,6 +22,7 @@ Bibi.plugin.epubcfi.init = function(){
 	/////////////////////////////////////////////////////////////////
 	
 	Bibi.plugin.epubcfi.EPUBCFI = '';
+    Bibi.plugin.epubcfi.targetText ='';
 
   window.fbAsyncInit = function() {
     FB.init({
@@ -161,7 +162,9 @@ Bibi.plugin.epubcfi.init = function(){
                     if( range.type === 'None' ){ return null; }
                     dom = range.getRangeAt(0).cloneContents();
                     if( dom.textContent === '' ){ return null; }
-                    console.log( pageId, dom.textContent );
+
+                    Bibi.plugin.epubcfi.targetText = dom.textContent;
+                    //console.log( pageId, dom.textContent );
                     
                     tm = pageId.split('-');
                     spineNo = parseInt(tm[1]);
@@ -209,8 +212,8 @@ Bibi.plugin.epubcfi.init = function(){
         img: "../plugin/icon/ic_facebook_20.png" },
         function(){
             var url = Bibi.plugin.epubcfi.EPUBCFI;
-            var title = B.Package.Metadata['title'];
-            var disc = B.Package.Metadata['discription'] || '';
+            var title = B.Package.Metadata['title'] || '';
+            var disc =  Bibi.plugin.epubcfi.targetText || '';
             var cover = BiBiBaseURL + 'bookshelf/' + B.Name + '/';
 
             if( typeof B.Package.Manifest['cover-image'].Path !== 'undefined' ){
