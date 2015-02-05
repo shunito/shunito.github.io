@@ -214,7 +214,7 @@ Bibi.plugin.epubcfi.init = function(){
             var url = Bibi.plugin.epubcfi.EPUBCFI;
             var title = B.Package.Metadata['title'] || '';
             var disc =  Bibi.plugin.epubcfi.targetText || '';
-            var cover = BiBiBaseURL + 'bookshelf/' + B.Name + '/';
+            var cover = BiBiBaseURL.slice(0,-2) + 'bookshelf/' + B.Name + '/';
 
             if( typeof B.Package.Manifest['cover-image'].Path !== 'undefined' ){
                 cover += B.Package.Manifest['cover-image'].Path;
