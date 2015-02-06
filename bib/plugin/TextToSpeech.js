@@ -65,7 +65,7 @@ Bibi.plugin.tts.init = function(){
     				subText = [];
     				for(i=0; i<l; i++){
     					c = text.charAt(i);
-    					if( msg.lang === 'jp' && c.match(/[\s,。、(「（]/) ){
+    					if( msg.lang === 'ja-JP' && c.match(/[\s,。、(「（]/) ){
     						//console.log( 'sub', str + c );
     						subText.push(str + c);
     						str = '';
