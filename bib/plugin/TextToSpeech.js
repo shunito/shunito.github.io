@@ -37,7 +37,7 @@ Bibi.plugin.tts.init = function(){
         else{ EPUBLang = 'en-US'; }
         
         if( EPUBLang === 'en' ) { msg.lang = 'en-US'; }
-        else if( EPUBLang === 'jp' ) { msg.lang = 'ja-JP'; }
+        else if( EPUBLang === 'jp' || EPUBLang === 'ja' ) { msg.lang = 'ja-JP'; }
         else if( EPUBLang === 'de' ) { msg.lang = 'de-DE'; }
         else if( EPUBLang === 'es' ) { msg.lang = 'es-ES'; }
         else if( EPUBLang === 'fr' ) { msg.lang = 'fr-FR'; }
