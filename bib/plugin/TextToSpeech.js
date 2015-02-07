@@ -117,10 +117,15 @@ Bibi.plugin.tts.init = function(){
 
     function speak( num ){
     	var i =0, l = speakList.length;
-    	var text , node , parent;
+    	var text , node , parent, span;
     	var st;
 
-    	if( num >= l ) { return true; }
+    	if( num >= l ) {
+    	    tts = false;
+            span = document.getElementById('mnTTS');
+            span.style.backgroundImage = "url(../plugin/icon/ic_volume_up_grey600_18dp.png)";
+            return true;
+        }
     	if( !tts ) { return true; }
 
     	node = speakList[num][0];
