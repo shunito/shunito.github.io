@@ -26,7 +26,7 @@ Bibi.plugin.tts.init = function(){
     var speakList = [];
     var highlightColor = '#FFD700';
     var msg = new SpeechSynthesisUtterance();
-    var pageBody;
+    var pageNo;
     
     function setLang(){
         var EPUBLang;
@@ -34,7 +34,7 @@ Bibi.plugin.tts.init = function(){
         if( typeof B.Package.Metadata.language !== 'undefined'){
             EPUBLang = B.Package.Metadata.language;
         }
-        else{ EPUBLang = 'en-US'; }
+        else{ msg.lang = 'en-US'; return; }
         
         if( EPUBLang === 'en' ) { msg.lang = 'en-US'; }
         else if( EPUBLang === 'jp' || EPUBLang === 'ja' ) { msg.lang = 'ja-JP'; }
@@ -50,8 +50,24 @@ Bibi.plugin.tts.init = function(){
     	var text = '';
     	var type = node.nodeType;
     	var name = node.nodeName;
-    	var childNodes;
+    	var childNodes ,tagName;
     	var subText, i, l, c, str ,tmp;
+    	
+    	if( type === 1 ) { // Element Node
+    	    //console.log( node );
+    	    tagName = node.tagName.toUpperCase();
+        	if( tagName === 'RT' || tagName === 'RP' || tagName === 'SCRIPT' ){
+            	console.log('skip tag ->' ,tagName);
+            	return;
+        	}
+        	if( tagName === 'IMG' ){
+            	text = node.alt;
+            	if( text.length > 0){
+            	    speakList.push([node, text]);                	
+            	}
+            	return;
+        	}
+    	}
 
     	if( type === 3 ) { // TEXT Node
     		text = node.nodeValue;
@@ -103,10 +119,6 @@ Bibi.plugin.tts.init = function(){
     		return;
     	}
 
-    	if( name && name.toUpperCase() ==='SCRIPT'){
-    		return;
-    	}
-
     	if( typeof node.childNodes !== 'undefined' ){
     		childNodes = node.childNodes;
 	    	for( n in childNodes ) {
@@ -115,15 +127,14 @@ Bibi.plugin.tts.init = function(){
     	}
     }
 
-    function speak( num ){
+    function speak( num, page ){
     	var i =0, l = speakList.length;
     	var text , node , parent, span;
     	var st;
+    	var pages;
 
     	if( num >= l ) {
-    	    tts = false;
-            span = document.getElementById('mnTTS');
-            span.style.backgroundImage = "url(../plugin/icon/ic_volume_up_grey600_18dp.png)";
+            nextPage();            
             return true;
         }
     	if( !tts ) { return true; }
@@ -134,7 +145,13 @@ Bibi.plugin.tts.init = function(){
     	parent = node.parentElement;
     	st = parent.style;
     	st.backgroundColor = highlightColor;
-
+    	
+    	// Scroll to Speaking Element
+    	R.focus({
+        	Element: parent,
+        	Item: page
+    	});
+    	
     	msg.text = text;
     	msg.onerror = function(event){
     	    O.log(2, "plugin Error - TTS Plugin:" + event );
@@ -147,11 +164,10 @@ Bibi.plugin.tts.init = function(){
     	msg.onend = function (event) {
     		speaking = false;
     		st.backgroundColor = '';
-    	    O.log(2, "plugin TTS speak end: " + event.elapsedTime + 's' );
 
     		// Next Text
     		setTimeout(function(){
-	    		speak( num + 1 );
+	    		speak( num + 1, page );
     		}, 500);
     	}
 
@@ -166,15 +182,37 @@ Bibi.plugin.tts.init = function(){
         var body = doc.getElementsByTagName('body')[0];
     	return body;
 	}
+	
+	function nextPage(){
+	    var nextPageNo = pageNo + 1;
+	    var body, page;
+	    
+	    O.log(2, "plugin TTS read next page: " + nextPageNo );
+	    
+	    R.focus( nextPageNo );
+	    setTimeout(function(){
+    	    pageNo = nextPageNo;
+            body = getPageBody();
+            page = R.getCurrentPages();
+
+            speakList = [];
+            checkNode(body);
+            speak( 0, page );
+        }, 500);
+	}
 
 
     Bibi.plugin.bind("load", function(){
 
         // Settings
         msg.volume = 1;
-        msg.rate = 1;
+        msg.rate = 1.4;
         msg.pitch = 2;
         msg.lang = 'en-US'; // default
+        
+        if( sML.OperatingSystem.iOS ){
+            msg.rate = msg.rate / 2;
+        }
     
         setLang();
 
@@ -197,7 +235,7 @@ Bibi.plugin.tts.init = function(){
                     
                     speakList = [];
                     checkNode(body);
-                    speak( 0 );
+                    speak( 0, page );
                 }
                 else{
                     span = document.getElementById('mnTTS');
