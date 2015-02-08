@@ -27,6 +27,7 @@ Bibi.plugin.tts.init = function(){
     var highlightColor = '#FFD700';
     var msg = new SpeechSynthesisUtterance();
     var pageNo;
+    var maxPageNo = B.Package.Spine.itemrefs.length;
     
     function setLang(){
         var EPUBLang;
@@ -175,25 +176,31 @@ Bibi.plugin.tts.init = function(){
     	speechSynthesis.speak(msg);
 	}
 	
-	function getPageBody(){
-        var page = R.getCurrentPages();
-        var startPage = page.Start.Item;
-        var doc = startPage.contentDocument || startPage.contentWindow.document;
+	function getPageBody(page){
+        var item = R.Items[page];
+        var doc = item.contentDocument || item.contentWindow.document;
         var body = doc.getElementsByTagName('body')[0];
     	return body;
 	}
 	
 	function nextPage(){
 	    var nextPageNo = pageNo + 1;
-	    var body, page;
+	    var body, page, span;
 	    
-	    O.log(2, "plugin TTS read next page: " + nextPageNo );
+	    if( nextPageNo >= maxPageNo ){
+    	    O.log(2, "plugin TTS last page: ");
+            span = document.getElementById('mnTTS');
+            span.style.backgroundImage = "url(../plugin/icon/ic_volume_off_grey600_18dp.png)";
+            tts = false;
+            return;
+	    }
 	    
 	    R.focus( nextPageNo );
+	    O.log(2, "plugin TTS read next page: " + nextPageNo );
+	    
 	    setTimeout(function(){
     	    pageNo = nextPageNo;
-            body = getPageBody();
-            page = R.getCurrentPages();
+    	    body = getPageBody(pageNo);
 
             speakList = [];
             checkNode(body);
@@ -221,11 +228,12 @@ Bibi.plugin.tts.init = function(){
             label: "Text To Speech ",
             img: "../plugin/icon/ic_volume_up_grey600_18dp.png" },
             function(){
-                var body = getPageBody();
                 var page = R.getCurrentPages();
-                var span;
+                var body, span;
                 
-                pageNo = page.Start.PageIndex;
+                pageNo = page.Start.Item.ItemIndex;
+                body = getPageBody( pageNo );
+
                 tts = !tts;
                 if( speaking ){ speechSynthesis.cancel(msg); }
                 
@@ -246,8 +254,7 @@ Bibi.plugin.tts.init = function(){
     });
 
     Bibi.plugin.bind("focus", function(){
-        var body = getPageBody();
-        var page = R.getCurrentPages();
+        // focus
     });
 
 }
