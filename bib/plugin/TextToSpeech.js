@@ -128,10 +128,15 @@ Bibi.plugin.tts.init = function(){
     	}
     }
 
+    function getDisplayType (element) {
+        var cStyle = element.currentStyle || window.getComputedStyle(element, ""); 
+        return cStyle.display;
+    }
+
     function speak( num, page ){
     	var i =0, l = speakList.length;
     	var text , node , parent, span;
-    	var st;
+    	var st , displayType;
     	var pages;
 
     	if( num >= l ) {
@@ -148,10 +153,13 @@ Bibi.plugin.tts.init = function(){
     	st.backgroundColor = highlightColor;
     	
     	// Scroll to Speaking Element
-    	R.focus({
-        	Element: parent,
-        	Item: page
-    	});
+    	displayType = getDisplayType(parent)
+    	if( displayType === 'block' || displayType === 'list-item' ){
+        	R.focus({
+            	Element: parent,
+            	Item: page
+        	});        	
+    	}
     	
     	msg.text = text;
     	msg.onerror = function(event){
@@ -213,12 +221,13 @@ Bibi.plugin.tts.init = function(){
 
         // Settings
         msg.volume = 1;
-        msg.rate = 1.4;
+        msg.rate = 1;
         msg.pitch = 2;
         msg.lang = 'en-US'; // default
         
+        // iOSのみ倍速になるのを補正
         if( sML.OperatingSystem.iOS ){
-            msg.rate = msg.rate / 2;
+            msg.rate = 0.5;
         }
     
         setLang();
