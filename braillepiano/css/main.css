@@ -1,0 +1,89 @@
+
+/* PIANO */
+#keybord {
+    display:none;
+	position:absolute;
+	z-index: 10;
+	left: 20px;
+	top:50px;
+}
+
+#C3, #D3, #E3, #F3, #G3, #A3, #B3, #C4 {
+	z-index: 20;
+    display:inline-block;
+	background-color: #eee;
+	border:1px solid #999;
+	width: 40px;
+	font-size: 10px;
+	text-align: center;
+	line-height:2;
+}
+
+#touchStage{
+	position:absolute;
+	z-index: 100;
+	top:0; left: 0;
+	width: 100%;
+	height: 100%;
+	
+	background-color: #FFF;
+}
+
+#func {
+	position:absolute;
+	z-index: 120;
+	top:0; left: 0;
+	width: 20%;
+	height: 100%;
+	
+	background-color: #EEE;
+}
+
+#cvStage{
+	position:absolute;
+	z-index: 200;
+	top:0; left: 20%;
+	width: 80%;
+	height: 100%;
+
+}
+
+#brCanvas{
+	position:absolute;
+	z-index: 110;
+}
+
+
+#ioCanvas{
+	position:absolute;
+	z-index: 220;
+	top:0; left:0;
+    width:100%;
+    height:100%;
+	background-color: #FFF;
+	opacity: 0.5;
+}
+
+#result{
+    font-size: 200%;
+	position:absolute;
+	width:95%;
+	word-break: break-all ;
+	z-index: 210;
+	top:0; left:0;
+    margin: 0;
+	padding:10px;
+	line-height:1.4;
+}
+
+#copyright{
+    z-index: 1000;
+	position:absolute;
+	width:80%;
+	color: #666;
+    bottom: 0;
+    right: 0;
+    padding:0.5em;
+    font-size: 80%;
+    text-align: right;
+}

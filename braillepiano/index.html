@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>BraillePiano</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hammer.min.js"></script>
+    </head>
+    <body>
+        <div id="keybord">
+            <div id="C3">ド</div>
+            <div id="D3">レ</div>
+            <div id="E3">ミ</div>
+            <div id="F3">ファ</div>
+            <div id="G3">ソ</div>
+            <div id="A3">ラ</div>
+            <div id="B3">シ</div>
+            <div id="C4">ド</div>
+        </div>
+        <div id="touchStage">            
+            <div id="func">
+                <canvas id="brCanvas"></canvas>
+            </div>
+            <div id="cvStage">
+                <canvas id="ioCanvas"></canvas>
+                <p id="result"></p>
+            </div>
+        </div>
+        <p id="copyright">音楽素材:<a href="http://maoudamashii.jokersounds.com/" target="_blank">魔王魂</a></p>
+        <script type="text/javascript" src="js/touch.js"></script>
+    </body>
+</html>
