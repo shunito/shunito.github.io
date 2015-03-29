@@ -109,6 +109,7 @@
                 playSound( this.id );
             }, true);
         }
+        $("#loading").hide();
     }
 
     function playSound( key ){
