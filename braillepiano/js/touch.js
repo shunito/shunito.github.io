@@ -160,6 +160,7 @@
     var temp = [];
     var funcFinger = [];
     var lineMode = 0;
+    var playing = 0;
 
     var animationFrame = window.requestAnimationFrame
      || window.webkitRequestAnimationFrame
@@ -201,6 +202,7 @@
         touches = e.originalEvent.touches;
     });
 
+//   ---------------------------------------------------------------  //
 
     var funcElm = document.getElementById('func');
     var mc = new Hammer(funcElm);
@@ -244,8 +246,6 @@
         
         drawBraille();
     });
-
-
 
     function checkFinger(){
         var i, l = touches.length;
@@ -375,14 +375,35 @@
         ctx.clearRect(0, 0, cvWidth, cvHeight);
     }
 
+    function checkPlaying(){
+        var i,l,obj, count;
+        for(var i=0; i< codeList.length; i++){
+            obj = audioObjList[ codeList[i] ];
+            if( obj.paused || obj.ended){ count++; }
+        }
+        playing = count;
+    }
+
     function playBrailmuze(){
         var i,l = fingers.length;
         var code;
+        
+        checkPlaying();
+        if( playing > 0 ){ return; }
+        
+        function play( code, delay ){
+            var c = code;
+            var d = delay * 500;
+            setTimeout( function(){
+                playSound( c );                
+            }, d );            
+        }
 
         for( i=0; i<l;i++){
             code = codeList[i];
             if( fingers[i] === 1){
-                playSound( code );
+                play(code, playing);
+                playing += 1;
             }
             else{
                 stopSound( code );
@@ -408,8 +429,6 @@
     };
 
     animation();
-//    setInterval( playBrailmuze, 100);
-
 
 }());
 
