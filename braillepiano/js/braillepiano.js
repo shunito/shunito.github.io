@@ -84,7 +84,7 @@
     var tempo = 140; // BPM (beats per minute)
     var eighthNoteTime = (60 / tempo) / 2;
 
-    var codeList = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4"];
+    var codeList = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4", "BD", "DH"];
     var mInstruments = "piano";
     var ext = '.wav';
 
@@ -232,6 +232,16 @@
                 waon++;
             }
         }
+    }
+
+    function playBassDrum(){
+        var buffer = sourceList[8].buffer;
+        playSound(buffer, 0);
+    }
+
+    function playDrumHat(){
+        var buffer = sourceList[9].buffer;
+        playSound(buffer, 0);
     }
 
 
