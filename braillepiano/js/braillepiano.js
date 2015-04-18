@@ -84,7 +84,7 @@
     var tempo = 140; // BPM (beats per minute)
     var eighthNoteTime = (60 / tempo) / 2;
 
-    var codeList = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4", "BD", "DH"];
+    var codeList = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4", "BD", "DH", "S1", "S2"];
     var mInstruments = "piano";
     var ext = '.wav';
 
@@ -232,16 +232,31 @@
                 waon++;
             }
         }
+        
+        if(waon ===0){
+            playDrumHat();
+        }
     }
 
-    function playBassDrum(){
+    function playBassDrum( delay ){
         var buffer = sourceList[8].buffer;
-        playSound(buffer, 0);
+        playSound(buffer, delay * eighthNoteTime);
     }
 
-    function playDrumHat(){
+    function playDrumHat( delay ){
         var buffer = sourceList[9].buffer;
-        playSound(buffer, 0);
+        playSound(buffer, delay * eighthNoteTime);
+    }
+
+    function playSystemSound( type , delay ){
+        var buffer;
+        if( type === 1 ){
+            buffer = sourceList[10].buffer;
+        }
+        else{
+            buffer = sourceList[11].buffer;            
+        }
+        playSound(buffer, delay * eighthNoteTime);
     }
 
 
@@ -264,6 +279,9 @@
     var funcFinger = [];
     var lineMode = 0;
     var playing = false;
+    var speachText = "";
+    var clearInput = false;
+    var clearAll = false;
 
     var animationFrame = window.requestAnimationFrame
      || window.webkitRequestAnimationFrame
@@ -309,24 +327,36 @@
 
     var funcElm = document.getElementById('func');
     var mc = new Hammer(funcElm);
-    var speachText = "";
+    
     mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    mc.on("panleft panright panup pandown tap press", function(ev) {
+    mc.on("panleft panright panup pandown panend tap press", function(ev) {
 
         if(ev.type === 'tap'){
             if( lineMode === 0) {
                 fingers = [0,0,0];
                 lineMode = 1;
+                playDrumHat();
             }
             else{
                 fingers[3] = 0; fingers[4] = 0;  fingers[5] = 0;
                 lineMode = 1;
+                playBrailmuze();
             }
-            playBrailmuze();
         }
 
         // Text To Speach!!!
         if(ev.type === 'panright'){
+            if( fingers.length === 6){
+                lineMode = 0;
+                result = dot2braille( fingers );
+                brStr = brStr + result;
+
+                $("#result").html( brStr );
+                $("#text").html( Braille.toKana( brStr ) );
+                speachText = Braille.toKana( brStr );
+                fingers.length = 0;
+                touch = [];
+            }
         
             if( speaking ){ return; }
 
@@ -347,18 +377,11 @@
         }
 
         if(ev.type === 'panleft'){
-            lineMode = 0;
-            brStr = "";
-            $("#result").html("&nbsp;");
-            $("#text").html("&nbsp;");
-            fingers.length = 0;
-            touch = [];            
+            clearAll = true;
         }
 
         if(ev.type === 'panup'){
-            lineMode = 0;
-            fingers.length = 0;
-            touch = [];
+            clearInput = true;
         }
 
         if(ev.type === 'pandown'){
@@ -374,7 +397,25 @@
                 touch = [];
             }
         }
-        
+
+        if(ev.type === 'panend'){
+            if( clearInput || clearAll ){
+                lineMode = 0;
+                fingers.length = 0;
+                touch = [];
+            }
+            if( clearInput ){
+                playSystemSound(1, 0);                
+            }
+            else if( clearAll ){
+                speachText = brStr = "";
+                $("#result").html("&nbsp;");
+                $("#text").html("&nbsp;");
+                playSystemSound(2, 0);
+            }
+            clearInput = clearAll = false;
+        }
+
         drawBraille();
     });
 
