@@ -1,5 +1,5 @@
 /*
- * BiB/i Plugin 
+ * BiB/i Plugin
  * Bulk develop TTS
  */
 
@@ -28,15 +28,15 @@ Bibi.plugin.tts.init = function(){
     var msg = new SpeechSynthesisUtterance();
     var pageNo;
     var maxPageNo = B.Package.Spine.itemrefs.length;
-    
+
     function setLang(){
         var EPUBLang;
-        
+
         if( typeof B.Package.Metadata.language !== 'undefined'){
             EPUBLang = B.Package.Metadata.language;
         }
         else{ msg.lang = 'en-US'; return; }
-        
+
         if( EPUBLang === 'en' ) { msg.lang = 'en-US'; }
         else if( EPUBLang === 'jp' || EPUBLang === 'ja' ) { msg.lang = 'ja-JP'; }
         else if( EPUBLang === 'de' ) { msg.lang = 'de-DE'; }
@@ -53,7 +53,7 @@ Bibi.plugin.tts.init = function(){
     	var name = node.nodeName;
     	var childNodes ,tagName;
     	var subText, i, l, c, str ,tmp;
-    	
+
     	if( type === 1 ) { // Element Node
     	    //console.log( node );
     	    tagName = node.tagName.toUpperCase();
@@ -64,7 +64,7 @@ Bibi.plugin.tts.init = function(){
         	if( tagName === 'IMG' ){
             	text = node.alt;
             	if( text.length > 0){
-            	    speakList.push([node, text]);                	
+            	    speakList.push([node, text]);
             	}
             	return;
         	}
@@ -89,7 +89,7 @@ Bibi.plugin.tts.init = function(){
     					}
     					else if( c.match(/[“".,(]/) ){
     						subText.push(str + c);
-    						str = '';        					
+    						str = '';
     					}
     					else{
 	    					str += c;
@@ -104,8 +104,8 @@ Bibi.plugin.tts.init = function(){
     					tmp = str + subText[i].trim();
     					if( tmp.length > MAX_TEXT ){
     					    if( str.length > 0){
-        						speakList.push([node, str.trim()]);        					    
-    					    } 
+        						speakList.push([node, str.trim()]);
+    					    }
     						str = subText[i];
     					}
     					else{
@@ -129,7 +129,7 @@ Bibi.plugin.tts.init = function(){
     }
 
     function getDisplayType (element) {
-        var cStyle = element.currentStyle || window.getComputedStyle(element, ""); 
+        var cStyle = element.currentStyle || window.getComputedStyle(element, "");
         return cStyle.display;
     }
 
@@ -140,27 +140,27 @@ Bibi.plugin.tts.init = function(){
     	var pages;
 
     	if( num >= l ) {
-            nextPage();            
+            nextPage();
             return true;
         }
     	if( !tts ) { return true; }
 
     	node = speakList[num][0];
     	text = speakList[num][1];
-    	
+
     	parent = node.parentElement;
     	st = parent.style;
     	st.backgroundColor = highlightColor;
-    	
+
     	// Scroll to Speaking Element
     	displayType = getDisplayType(parent)
     	if( displayType === 'block' || displayType === 'list-item' ){
         	R.focus({
             	Element: parent,
             	Item: page
-        	});        	
+        	});
     	}
-    	
+
     	msg.text = text;
     	msg.onerror = function(event){
     	    O.log(2, "plugin Error - TTS Plugin:" + event );
@@ -183,18 +183,18 @@ Bibi.plugin.tts.init = function(){
     	// Speak!
     	speechSynthesis.speak(msg);
 	}
-	
+
 	function getPageBody(page){
         var item = R.Items[page];
         var doc = item.contentDocument || item.contentWindow.document;
         var body = doc.getElementsByTagName('body')[0];
     	return body;
 	}
-	
+
 	function nextPage(){
 	    var nextPageNo = pageNo + 1;
 	    var body, page, span;
-	    
+
 	    if( nextPageNo >= maxPageNo ){
     	    O.log(2, "plugin TTS last page: ");
             span = document.getElementById('mnTTS');
@@ -202,10 +202,10 @@ Bibi.plugin.tts.init = function(){
             tts = false;
             return;
 	    }
-	    
+
 	    R.focus( nextPageNo );
 	    O.log(2, "plugin TTS read next page: " + nextPageNo );
-	    
+
 	    setTimeout(function(){
     	    pageNo = nextPageNo;
     	    body = getPageBody(pageNo);
@@ -222,14 +222,14 @@ Bibi.plugin.tts.init = function(){
         // Settings
         msg.volume = 1;
         msg.rate = 1;
-        msg.pitch = 2;
+        msg.pitch = 1;
         msg.lang = 'en-US'; // default
-        
-        // iOSのみ倍速になるのを補正
-        if( sML.OperatingSystem.iOS ){
-            msg.rate = 0.5;
-        }
-    
+
+        // iOSのみ倍速になるのを補正 -> 不要になった？
+        //if( sML.OperatingSystem.iOS ){
+        //    msg.rate = 0.5;
+        //}
+
         setLang();
 
         Bibi.plugin.addMenu({
@@ -239,27 +239,27 @@ Bibi.plugin.tts.init = function(){
             function(){
                 var page = R.getCurrentPages();
                 var body, span;
-                
+
                 pageNo = page.Start.Item.ItemIndex;
                 body = getPageBody( pageNo );
 
                 tts = !tts;
                 if( speaking ){ speechSynthesis.cancel(msg); }
-                
+
                 if(tts){
                     span = document.getElementById('mnTTS');
                     span.style.backgroundImage = "url(../plugin/icon/ic_volume_off_grey600_18dp.png)";
-                    
+
                     speakList = [];
                     checkNode(body);
                     speak( 0, page );
                 }
                 else{
                     span = document.getElementById('mnTTS');
-                    span.style.backgroundImage = "url(../plugin/icon/ic_volume_up_grey600_18dp.png)";                    
+                    span.style.backgroundImage = "url(../plugin/icon/ic_volume_up_grey600_18dp.png)";
                 }
                 C.Panel.toggle();
-            });        
+            });
     });
 
     Bibi.plugin.bind("focus", function(){
