@@ -58,7 +58,7 @@ Bibi.Preset = {
     //{ "name": "OverReflow", "src": "extensions/overreflow/overreflow.js" },
     //{ "name": "JaTEx", "src": "extensions/jatex/jatex.js" },
     // ------------------------------------------------------------------------------------------
-    { "name": "openBD", "src" : "extensions/openbd/openBD.js" },
+    { "name": "openBD", "src" : "extensions/openbd/openbd.js" },
     // ------------------------------------------------------------------------------------------
     { "name": "Bibi", "4U" : "w0" } // (*'-'*)
 ],
