@@ -1,0 +1,45 @@
+@charset "utf-8";
+ 
+/*!
+ *
+ *  # Pipi Style
+ *
+ *  - "Styles for Pipi, an Embedder of BiB/i"
+ *  - Copyright (c) Satoru MATSUSHIMA - http://bibi.epub.link/
+ *  - Licensed under the MIT license. - http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+// ================================================================================
+// + Pipi (Bibi Putter)
+// --------------------------------------------------------------------------------
+
+
+// - Reset
+// --------------------------------------------------------------------------------
+
+span.bibi-holder,
+span.bibi-holder iframe.bibi-frame {
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none 0;
+	vertical-align: top;
+	line-height: 1;
+	text-decoration: none;
+	background: transparent;
+}
+
+span.bibi-holder {
+	position: relative;
+	border: solid 1px rgb(236,234,232);
+	border: solid 1px rgb(220,216,212);
+	iframe.bibi-frame {
+		position: relative;
+		z-index: 10;
+		border-top: solid 1px transparent;
+		width: 100%;
+		height: 100%;
+	}
+}
