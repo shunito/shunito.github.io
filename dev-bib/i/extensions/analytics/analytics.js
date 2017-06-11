@@ -26,6 +26,10 @@ Bibi.x({
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+
+console.log("--- GA Add script ---");
+
+
     ga('create', X.Presets["Analytics"]["tracking-id"], 'auto', { 'allowLinker': true });
     ga('require', 'linker'); 
     ga('linker:autoLink', (function(Hosts) {
@@ -35,7 +39,8 @@ Bibi.x({
         return Hosts;
     })([]));
 
-    E.add("bibi:created-navigation", function() {
+    E.add("bibi:prepared", function() {
+
         sML.each(I.Panel.BookInfo.Navigation.querySelectorAll("a"), function() {
             this.addEventListener("click", function() {
                 ga('send', { hitType: 'event',

@@ -71,6 +71,8 @@ Bibi.Preset = {
     //{ "name": "OverReflow", "src": "extensions/overreflow/overreflow.js" },
     //{ "name": "JaTEx", "src": "extensions/jatex/jatex.js" },
     // ------------------------------------------------------------------------------------------
+    { "name": "Text To Speech", "src": "extensions/tts/tts.js" },
+    // ------------------------------------------------------------------------------------------
     { "name": "Bibi", "4U" : "w/0" } // (*'-'*)
 ],
 

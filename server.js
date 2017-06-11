@@ -54,6 +54,3 @@ http.createServer(function(request, response) {
 }).listen(parseInt(port, 10));
 
 console.log("Server running at http://localhost:" + port );
-使い方
-
-$ node server.js 
