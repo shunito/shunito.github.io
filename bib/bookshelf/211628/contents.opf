@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+  <dc:title>桜の樹の下には</dc:title>
+  <dc:creator opf:role="aut">青空文庫</dc:creator>
+  <dc:identifier id="BookId">info:wook.jp-211628</dc:identifier>
+  <dc:language>ja</dc:language>
+  <meta name="cover" content="cover" />
+</metadata>
+<manifest>
+  <item id="item0001" href="OEBPS/item0001.xhtml" media-type="application/xhtml+xml" />
+  <item id="item0002" href="OEBPS/item0002.xhtml" media-type="application/xhtml+xml" />
+  <item id="item0003" href="OEBPS/item0003.xhtml" media-type="application/xhtml+xml" />
+  <item id="ncx" href="toc.ncx" media-type="text/xml" />
+  <item id="cover" href="OEBPS/images/cover.jpg" media-type="image/jpeg" />
+</manifest>
+<spine toc="ncx">
+  <itemref idref="item0001" />
+  <itemref idref="item0002" />
+  <itemref idref="item0003" />
+</spine>
+</package>
