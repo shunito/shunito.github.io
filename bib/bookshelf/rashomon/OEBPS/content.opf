@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="identifier0" version="3.0" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier id="identifier0">urn:uuid:F3733D66-DDC3-46CA-8D78-A05A1E8915E1</dc:identifier>
+<meta refines="#identifier0" property="identifier-type" scheme="xsd:string">uuid</meta>
+<dc:title id="title0">羅生門</dc:title>
+<meta refines="#title0" property="display-seq">1</meta>
+<dc:creator id="creator0">芥川龍之介</dc:creator>
+<meta refines="#creator0" property="display-seq">1</meta>
+<dc:format>application/epub+zip</dc:format>
+<dc:language>ja</dc:language>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="dcterms:modified">2015-10-11T00:00:00Z</meta>
+<meta name="cover" content="_cover.png" />
+</metadata>
+<manifest>
+<item media-type="image/png" href="cover.png" id="_cover.png" properties="cover-image" />
+<item media-type="text/css" href="template.css" id="_template.css" />
+<item media-type="text/css" href="style.css" id="_style.css" />
+<item media-type="application/xhtml+xml" href="cover.xhtml" id="_cover.xhtml" properties="svg" />
+<item media-type="application/xhtml+xml" href="titlepage.xhtml" id="_titlepage.xhtml" />
+<item media-type="application/xhtml+xml" href="nav.xhtml" id="_nav.xhtml" properties="nav" />
+<item media-type="application/xhtml+xml" href="bodymatter_0.xhtml" id="_bodymatter_0.xhtml" properties="scripted" />
+<item media-type="application/xhtml+xml" href="backmatter_0.xhtml" id="_backmatter_0.xhtml" properties="scripted" />
+<item media-type="application/x-dtbncx+xml" href="toc.ncx" id="_toc.ncx" />
+<item media-type="application/javascript" id="indexjs" href="index.js" />
+<item media-type="application/javascript" id="jquery" href="jquery-1.11.1.min.js" />
+<item media-type="application/vnd.ms-opentype" id="KG.font" href="KouzanGyoushoOTF.otf" />
+<item media-type="image/svg+xml" href="volume-high.svg" id="_volume-high.svg" />
+<item media-type="image/svg+xml" href="volume-low.svg" id="_volume-low.svg" />
+<item media-type="image/svg+xml" href="volume-off.svg" id="_volume-off.svg" />
+</manifest>
+<spine page-progression-direction="rtl" toc="_toc.ncx">
+<itemref idref="_cover.xhtml" linear="no" />
+<itemref idref="_titlepage.xhtml" />
+<itemref idref="_nav.xhtml" />
+<itemref idref="_bodymatter_0.xhtml" />
+<itemref idref="_backmatter_0.xhtml" />
+</spine>
+<guide>
+<reference type="cover" title="表紙" href="cover.xhtml" />
+<reference type="titlepage" title="扉" href="titlepage.xhtml" />
+<reference type="toc" title="目次" href="nav.xhtml" />
+<reference type="text" title="本文" href="bodymatter_0.xhtml" />
+<reference type="text" title="奥付" href="backmatter_0.xhtml" />
+</guide>
+</package>
