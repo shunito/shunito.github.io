@@ -1,0 +1,30 @@
+<lexicon
+  version="1.0"
+  alphabet="x-JEITA"
+  xml:lang="ja"
+  xmlns="http://www.w3.org/2005/01/pronunciation-lexicon">
+   <lexeme>
+      <grapheme>羅生門</grapheme>
+      <phoneme>ラショウ/モン</phoneme>
+   </lexeme>
+   <lexeme>
+      <grapheme>揉烏帽子</grapheme>
+      <phoneme>モミエボシ</phoneme>
+   </lexeme>
+   <lexeme>
+      <grapheme>市女笠</grapheme>
+      <phoneme>イチメガサ</phoneme>
+   </lexeme>
+   <lexeme>
+      <grapheme>GitHub</grapheme>
+      <phoneme>ギットハブ</phoneme>
+   </lexeme>
+   <lexeme>
+      <grapheme>EPUB</grapheme>
+      <phoneme>イーパブ</phoneme>
+   </lexeme>
+   <lexeme>
+      <grapheme>IDPF</grapheme>
+      <phoneme>コクサイ/デジタル/パブリッシング/フォーラム</phoneme>
+   </lexeme>
+</lexicon>
