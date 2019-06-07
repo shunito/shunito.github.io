@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>サッカードと読みの効率テスト</title>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css" />
+
+</head>
+
+<body>
+  <section class="p-strip">
+    <div class="row">
+        <h1 class="p-heading--three">サッカードと読みの効率テスト</h1>
+      <div class="col-12">
+        <form class="p-form">
+          <div class="p-form__group">
+            <label for="frText">文章を入力してください</label>
+            <textarea rows="5" id="frText"></textarea>
+          </div>
+        </form>
+        <form class="p-form p-form--inline">
+          <div class="p-form__group">
+            <label for="fontsizeSelect" class="p-form__label">フォントサイズ</label>
+            <div class="p-form__control u-clearfix">
+              <select name="fontsizeSelect" id="fontsizeSelect">
+                <option value="12">12px</option>
+                <option value="14">14px</option>
+                <option value="16" selected="selected">16px</option>
+                <option value="18">18px</option>
+                <option value="20">20px</option>
+              </select>
+            </div>
+          </div>
+          <div class="p-form__group">
+              <label for="wordsByLineSelect" class="p-form__label">一行の文字数</label>
+              <div class="p-form__control u-clearfix">
+                <select name="wordsByLineSelect" id="wordsByLineSelect">
+                  <option value="26">26文字</option>
+                  <option value="30">30文字</option>
+                  <option value="34" selected="selected">34文字</option>
+                  <option value="38">38文字</option>
+                  <option value="42">42文字</option>
+                  <option value="46">46文字</option>
+                  <option value="50">50文字</option>
+                </select>
+              </div>
+          </div>
+          <div class="p-form__group">
+              <label for="baseLineSelect" class="p-form__label">ずらし幅</label>
+              <div class="p-form__control u-clearfix">
+                <select name="baseLineSelect" id="baseLineSelect">
+                  <option value="0">なし</option>
+                  <option value="5">5%</option>
+                  <option value="7.5" selected="selected">7.5%</option>
+                  <option value="10">10%</option>
+                  <option value="12">12%</option>
+                  <option value="15">15%</option>
+                  <option value="20">20%</option>
+                </select>
+              </div>
+          </div>
+
+          <div class="p-form__group">
+            <button class="p-button--positive" id="btnShow" type="button">表示</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" id="stage">
+      <article class="body">
+      <div class="col-12" id="result">
+      </div>
+    </article>
+    </div>
+  </section>
+  <script type="text/javascript" src="./dist/rakutenma.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="./dist/model_ja.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="./dist/hanzenkaku.js" charset="UTF-8"></script>
+
+  <script src="./dist/bundle.js"></script>
+  <script>
+    window.addEventListener('load', App);
+  </script>
+</body>
+
+</html>
