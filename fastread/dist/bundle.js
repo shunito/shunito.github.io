@@ -81,12 +81,18 @@ var App = (function () {
         const fontSize = document.getElementById('fontsizeSelect').value;
         const wordsByLine = document.getElementById('wordsByLineSelect').value;
         const baseLine = document.getElementById('baseLineSelect').value;
-        const stageWidth = Number(fontSize) * Number(wordsByLine);
         const addTopValue = fontSize / 100 * baseLine;
 
         result.style.height = "";
         result.style.fontSize = `${fontSize}px`;
-        result.style.width = `${stageWidth}px`;
+
+        if( wordsByLine === 'full' ){
+            result.style.width = "100%";
+        }
+        else{
+            let stageWidth = Number(fontSize) * Number(wordsByLine);
+            result.style.width = `${stageWidth}px`;
+        }
 
         let line, lineWords;
         let topPosition = 0;
@@ -120,12 +126,12 @@ var App = (function () {
             // remove result.childs
             while (result.firstChild) result.removeChild(result.firstChild);
 
-            console.log( lines );
+            // console.log( lines );
             lines.forEach(element => {
                 const tokens = rma.tokenize(HanZenKaku.hs2fs(HanZenKaku.hw2fw(HanZenKaku.h2z(element))));
                 const chunked = chunking( tokens );
-                console.log( tokens );
-                console.log( chunked );            
+                // console.log( tokens );
+                // console.log( chunked );            
 
                 let p = document.createElement('p');
                 chunked.forEach( chunk => {
