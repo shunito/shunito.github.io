@@ -83,6 +83,7 @@ var App = (function () {
         const baseLine = document.getElementById('baseLineSelect').value;
         const addTopValue = fontSize / 100 * baseLine;
 
+        result.classList.remove('hide');
         result.style.height = "";
         result.style.fontSize = `${fontSize}px`;
 

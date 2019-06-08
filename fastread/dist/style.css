@@ -369,6 +369,12 @@ body {
   white-space: nowrap;
   position: relative; }
 
+#stage .hide {
+  display: none; }
+
+#stage .show {
+  display: block; }
+
 @media (max-width: 772px) {
   #result {
     box-sizing: content-box;

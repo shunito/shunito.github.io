@@ -13,7 +13,7 @@
 <body>
   <section class="p-strip">
     <div class="row">
-        <h1 class="p-heading--three">サッカードと読みの効率テスト</h1>
+      <h1 class="p-heading--three">サッカードと読みの効率テスト</h1>
       <div class="col-12">
         <form class="p-form">
           <div class="p-form__group">
@@ -35,33 +35,33 @@
             </div>
           </div>
           <div class="p-form__group">
-              <label for="wordsByLineSelect" class="p-form__label">一行の文字数</label>
-              <div class="p-form__control u-clearfix">
-                <select name="wordsByLineSelect" id="wordsByLineSelect">
-                  <option value="26">26文字</option>
-                  <option value="30">30文字</option>
-                  <option value="34" selected="selected">34文字</option>
-                  <option value="38">38文字</option>
-                  <option value="42">42文字</option>
-                  <option value="46">46文字</option>
-                  <option value="50">50文字</option>
-                  <option value="full">幅100%</option>
-                </select>
-              </div>
+            <label for="wordsByLineSelect" class="p-form__label">一行の文字数</label>
+            <div class="p-form__control u-clearfix">
+              <select name="wordsByLineSelect" id="wordsByLineSelect">
+                <option value="26">26文字</option>
+                <option value="30">30文字</option>
+                <option value="34" selected="selected">34文字</option>
+                <option value="38">38文字</option>
+                <option value="42">42文字</option>
+                <option value="46">46文字</option>
+                <option value="50">50文字</option>
+                <option value="full">幅100%</option>
+              </select>
+            </div>
           </div>
           <div class="p-form__group">
-              <label for="baseLineSelect" class="p-form__label">ずらし幅</label>
-              <div class="p-form__control u-clearfix">
-                <select name="baseLineSelect" id="baseLineSelect">
-                  <option value="0">なし</option>
-                  <option value="5">5%</option>
-                  <option value="7.5" selected="selected">7.5%</option>
-                  <option value="10">10%</option>
-                  <option value="12">12%</option>
-                  <option value="15">15%</option>
-                  <option value="20">20%</option>
-                </select>
-              </div>
+            <label for="baseLineSelect" class="p-form__label">ずらし幅</label>
+            <div class="p-form__control u-clearfix">
+              <select name="baseLineSelect" id="baseLineSelect">
+                <option value="0">なし</option>
+                <option value="5">5%</option>
+                <option value="7.5" selected="selected">7.5%</option>
+                <option value="10">10%</option>
+                <option value="12">12%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+              </select>
+            </div>
           </div>
 
           <div class="p-form__group">
@@ -73,11 +73,37 @@
 
     <div class="row" id="stage">
       <article class="body">
-      <div class="col-12" id="result">
-      </div>
-    </article>
+        <div class="col-12 hide" id="result">
+        </div>
+      </article>
     </div>
   </section>
+
+  <section class="p-strip--light">
+    <div class="row">
+      <h2 class="p-heading--four">参考文献・資料</h2>
+      <div class="col-6">
+        <p>当プログラムは「読み効率を高める日本語電子リーダー」実験を元ネタに実装を試みたテストページです。<br />
+          元論文著者とは無関係であり、稼働および表示の不具合は製作者の責によります。</p>
+      </div>
+      <div class="col-6">
+        <ul class="p-list--divided">
+          <li class="p-list__item">(PDF) <a href="https://www.jstage.jst.go.jp/article/jkg/66/10/66_525/_pdf"
+              class="p-link--external" target="_blank">読み効率を高める日本語電子リーダー設計の試み</a> … 元ネタ</li>
+          <li class="p-list__item"><a href="https://github.com/rakuten-nlp/rakutenma">Rakuten MA (morphological
+              analyzer)</a> … 形態素解析</li>
+          <li class="p-list__item"><a href="http://www.nltk.org/book-jp/ch12.html#id56">Python による日本語自然言語処理</a> …
+            文節チャンキング</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <footer>
+        Copyright <a href="https://twitter.com/shunito">Shunsuke Ito.</a> The source code is licensed MIT.
+      </footer>
+    </div>
+  </section>
+
   <script type="text/javascript" src="./dist/rakutenma.js" charset="UTF-8"></script>
   <script type="text/javascript" src="./dist/model_ja.js" charset="UTF-8"></script>
   <script type="text/javascript" src="./dist/hanzenkaku.js" charset="UTF-8"></script>
