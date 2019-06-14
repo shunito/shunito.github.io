@@ -1,5 +1,8 @@
-var App = (function () {
-    'use strict';
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (global = global || self, global.App = factory());
+}(this, function () { 'use strict';
 
     const independent = ['A-c','D','E','I-c','N-n','N-nc','N-pn','N-xs','R','U','V-c'];
 
@@ -54,11 +57,20 @@ var App = (function () {
             const token = elm[0];
             const type = elm[1];
 
-            if( independent.includes(type) ){
+            console.log( elm );
+
+            if (beforeType === 'M-p' || beforeType === 'M-c' || beforeType === 'M-cp'){
+                result.push( chunk );
+                chunk = token;
+            }
+            else if( independent.includes(type) ){
                 if( beforeType === ''){
                     chunk = token;
                 }
-                else if( beforeType === 'P' ){
+                else if( beforeType === 'P' || beforeType === 'M-op' ){
+                    chunk += token;
+                }
+                else if( independent.includes(beforeType) && chunk.length < 3 ){
                     chunk += token;
                 }
                 else{
@@ -149,4 +161,4 @@ var App = (function () {
 
     return index;
 
-}());
+}));
