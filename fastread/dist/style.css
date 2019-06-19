@@ -382,6 +382,9 @@ body {
     padding: 0;
     border: none; } }
 
+.vibration {
+  line-height: 1.6; }
+
 .vibration span {
   animation-name: vibration;
   animation-duration: 1s;
