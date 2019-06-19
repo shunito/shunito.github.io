@@ -382,7 +382,7 @@ body {
     padding: 0;
     border: none; } }
 
-.vibration {
+#result p.vibration {
   line-height: 1.6; }
 
 .vibration span {
