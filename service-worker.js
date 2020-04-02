@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b28f3455c7a64b09efbd4972b7c354fa.js"
+  "/precache-manifest.0ba4859dd84d916f148120ac1911e104.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bes-viewer"});
